@@ -1,0 +1,12 @@
+node_modules
+/dist/*
+/assets
+*.tar
+*.tar.gz
+/scripts/*
+/temp/*
+~$*.xlsx
+~$*.docx
+
+
+

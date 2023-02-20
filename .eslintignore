@@ -1,0 +1,9 @@
+
+/libs/*
+/assets/*
+/documents/*
+/res/*
+/scripts/*
+/webgl/*
+/dist/*
+/*.js

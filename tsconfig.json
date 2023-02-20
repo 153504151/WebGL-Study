@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "noUnusedLocals": false,
+        "noUnusedParameters": true,
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+        },
+        "noEmit": true
+    },
+    "include": [
+        "*/*", 
+        "src/render/*",
+    ],
+    "exclude": [
+
+    ],
+}
