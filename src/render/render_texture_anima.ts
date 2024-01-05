@@ -335,7 +335,7 @@ class TextureShaderProgram {
         // lowp     – 10位的顶点格式，适合对颜色，照明计算和其它高性能操作，速度大约是highp 的4倍
         // https://zhuanlan.zhihu.com/p/89465940 光照方法与法线求点积,得到该点的光照颜色
         return `
-            // precision lowp float;         // 定义为低精度
+            // precision lowp float;      // 定义为低精度
             // highp vec3 iPosition;      // 变量前写法
 
             attribute vec3 iPosition;     // 顶点位置
@@ -381,13 +381,13 @@ class TextureShaderProgram {
             void main() {
                 vec4 textureColor = texture2D(iSampler, vec2(vTextureCoord.s, vTextureCoord.t)); // 计算纹理的颜色
                 textureColor.rgb -= 1.0 * time;
-                float r = pow(textureColor.r, 5.0);
-                float g = pow(textureColor.g, 5.0);
-                float b = pow(textureColor.b, 5.0);
-                textureColor.r = r;
-                textureColor.g = g;
-                textureColor.b = b;
-                textureColor.rgb *= vec3(0.0,0.84,0.9);
+                // float r = pow(textureColor.r, 5.0);
+                // float g = pow(textureColor.g, 5.0);
+                // float b = pow(textureColor.b, 5.0);
+                // textureColor.r = r;
+                // textureColor.g = g;
+                // textureColor.b = b;
+                // textureColor.rgb *= vec3(0.0,0.84,0.9);
 
                 gl_FragColor = vec4(textureColor.rgb * vLighting, textureColor.a);               // 混合光照值和纹理颜色
             }
